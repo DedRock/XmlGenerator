@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+   version="2.5">
+
+  <display-name>Calc Servlet</display-name>
+  <description>
+     Calc Servlet
+  </description>
+
+	<servlet>
+		<servlet-name>XmlGenerator</servlet-name>
+		<servlet-class>xml.XmlGeneratorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>XmlGenerator</servlet-name>
+		<url-pattern>/xml</url-pattern>
+	</servlet-mapping>
+
+</web-app>
